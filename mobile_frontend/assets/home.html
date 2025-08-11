@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home Screen</title>
+  <meta name="viewport" content="width=375, initial-scale=1">
+  <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+  <div class="home-container">
+    <div class="status-bar">
+      <span style="margin-left:auto; padding-right: 16px;">19:27 <span style="margin-left:10px;">🔋📶</span></span>
+    </div>
+    <div class="home-header">
+      <div class="header-titles">
+        <span class="greet">Hello Jega</span>
+        <span class="greet-desc">What are you cooking today?</span>
+      </div>
+      <div class="profile-btn">
+        <!-- Avatar bg circle -->
+        <img src="https://randomuser.me/api/portraits/men/11.jpg" alt="Avatar">
+      </div>
+    </div>
+    <div class="search-row">
+      <input class="search-input" type="text" placeholder="Search recipe" />
+      <button class="btn btn-filter">
+        <img src="https://img.icons8.com/ios/24/setting--v1.png" alt="Filter" style="width:24px; height:24px;" />
+      </button>
+    </div>
+    <div class="category-row">
+      <button class="category-btn" style="background: var(--color-129575); color: #fff;">All</button>
+      <button class="category-btn">Indian</button>
+      <button class="category-btn">Italian</button>
+      <button class="category-btn">Asian</button>
+      <button class="category-btn">Chinese</button>
+      <button class="category-btn">Fruit</button>
+      <button class="category-btn">Vegetables</button>
+      <button class="category-btn">Protein</button>
+      <button class="category-btn">Cereal</button>
+      <button class="category-btn">Local Dishes</button>
+    </div>
+
+    <div class="dishes-scroll">
+      <!-- Dish Card 1 -->
+      <div class="dish-card">
+        <img class="dish-card-img" src="https://images.unsplash.com/photo-1504674900247-0877df9cc836" alt="Greek Salad" />
+        <div class="dish-info">
+          <span class="dish-title">Classic Greek Salad</span>
+          <span class="dish-meta">
+            <span>Time: 15 Mins</span>
+          </span>
+          <span class="rating-badge">
+            <span>★</span> 4.5
+          </span>
+        </div>
+      </div>
+      <!-- Dish Card 2 -->
+      <div class="dish-card">
+        <img class="dish-card-img" src="https://images.unsplash.com/photo-1523987355523-c7b5b0723cbb" alt="Coleslaw" />
+        <div class="dish-info">
+          <span class="dish-title">Crunchy Nut Coleslaw</span>
+          <span class="dish-meta">
+            <span>Time: 10 Mins</span>
+          </span>
+          <span class="rating-badge"><span>★</span> 3.5</span>
+        </div>
+      </div>
+      <!-- Dish Card 3 -->
+      <div class="dish-card">
+        <img class="dish-card-img" src="https://images.unsplash.com/photo-1543351611-1bf94d4b6ef9" alt="Jambalaya" />
+        <div class="dish-info">
+          <span class="dish-title">Shrimp Chicken Andouille Sausage Jambalaya</span>
+          <span class="dish-meta">
+            <span>Time: 10 Mins</span>
+          </span>
+          <span class="rating-badge"><span>★</span> 3.0</span>
+        </div>
+      </div>
+      <!-- Dish Card 4 -->
+      <div class="dish-card">
+        <img class="dish-card-img" src="https://images.unsplash.com/photo-1519864600265-abb2372b2438" alt="Jollof Rice" />
+        <div class="dish-info">
+          <span class="dish-title">Barbecue Chicken Jollof Rice</span>
+          <span class="dish-meta">
+            <span>Time: 10 Mins</span>
+          </span>
+          <span class="rating-badge"><span>★</span> 4.5</span>
+        </div>
+      </div>
+      <!-- Dish Card 5 -->
+      <div class="dish-card">
+        <img class="dish-card-img" src="https://images.unsplash.com/photo-1464306076886-debca5e8a6b0" alt="Piri Piri Chicken" />
+        <div class="dish-info">
+          <span class="dish-title">Portuguese Piri Piri Chicken</span>
+          <span class="dish-meta">
+            <span>Time: 10 Mins</span>
+          </span>
+          <span class="rating-badge"><span>★</span> 4.5</span>
+        </div>
+      </div>
+    </div>
+    <div class="home-section-title">New Recipes</div>
+    <div class="new-recipes-scroll">
+      <!-- Recipe Card 1 -->
+      <div class="recipe-card">
+        <div class="flex space-between items-center">
+          <span class="recipe-title">Steak with tomato sauce and bulgur rice.</span>
+          <img class="recipe-card-img" src="https://images.unsplash.com/photo-1476718406336-bb5a9690ee2a" alt="Steak with tomato sauce and bulgur rice.">
+        </div>
+        <span class="rating-badge">★★★★★</span>
+        <div class="time-badge">
+          <img src="https://img.icons8.com/ios/17/timer.png" style="width:17px;height:17px" alt="Timer">
+          20 mins
+        </div>
+        <div class="flex items-center">
+          <img src="https://randomuser.me/api/portraits/men/33.jpg" alt="creator" style="width:25px;height:25px;border-radius:50%;">
+          <span style="margin-left:8px;font-size:11px;color:var(--color-a9a9a9)">By James Milner</span>
+        </div>
+      </div>
+      <!-- Recipe Card 2 Example -->
+      <div class="recipe-card">
+        <div class="flex space-between items-center">
+          <span class="recipe-title">Pilaf sweet with lamb-and-raisins</span>
+          <img class="recipe-card-img" src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c" alt="Pilaf sweet with lamb-and-raisins">
+        </div>
+        <span class="rating-badge">★★★★★</span>
+        <div class="time-badge">
+          <img src="https://img.icons8.com/ios/17/timer.png" style="width:17px;height:17px" alt="Timer">
+          20 mins
+        </div>
+        <div class="flex items-center">
+          <img src="https://randomuser.me/api/portraits/women/57.jpg" alt="creator" style="width:25px;height:25px;border-radius:50%;">
+          <span style="margin-left:8px;font-size:11px;color:var(--color-a9a9a9)">By Laura Wilson</span>
+        </div>
+      </div>
+    </div>
+    <div class="nav-bar">
+      <button class="btn btn-secondary">🏠</button>
+      <button class="btn btn-secondary">🔔</button>
+      <button class="btn btn-secondary">＋</button>
+      <button class="btn btn-secondary">🔖</button>
+      <button class="btn btn-secondary">👤</button>
+    </div>
+    <div class="home-indicator"></div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

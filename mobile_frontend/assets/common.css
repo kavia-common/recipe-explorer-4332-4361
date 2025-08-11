@@ -1,0 +1,161 @@
+:root {
+  /* === COLORS === */
+  --color-ffffff: #ffffff;
+  --color-292929: #292929;
+  --color-000000: #000000;
+  --color-e9fffa: #e9fffa;
+  --color-979797: #979797;
+  --color-fff2af: #fff2af;
+  --color-129575: #129575;
+  --color-dadada: #dadada;
+  --color-4cd964: #4cd964;
+  --color-121212: #121212;
+  --color-ff9c00: #ff9c00;
+  --color-ffc107: #ffc107;
+  --color-ff3d00: #ff3d00;
+  --color-4caf50: #4caf50;
+  --color-1976d2: #1976d2;
+  --color-035b81: #035b81;
+  --color-d9d9d9: #d9d9d9;
+  --color-484848: #484848;
+  --color-303030: #303030;
+  --color-a9a9a9: #a9a9a9;
+  --color-ffa61a: #ffa61a;
+  --color-ffce80: #ffce80;
+  --color-71b1a1: #71b1a1;
+  --color-130f26: #130f26;
+  --color-c1c1c1: #c1c1c1;
+  --color-ffe1b3: #ffe1b3;
+  --color-ffad30: #ffad30;
+  --color-dbebe7: #dbebe7;
+  --color-898989: #898989;
+  --color-292d32: #292d32;
+  --color-181818: #181818;
+  --color-c4c4c4: #c4c4c4;
+  --color-797979: #797979;
+  --color-808a96: #808a96;
+  --color-ceecd7: #ceecd7;
+  --color-31b057: #31b057;
+  --color-ffe1e7: #ffe1e7;
+  --color-fd3654: #fd3654;
+  --color-ffba4d: #ffba4d;
+  --color-d8d8d8: #d8d8d8;
+  --color-f6faf9: #f6faf9;
+  --color-afd3ca: #afd3ca;
+  --color-f4f4f4: #f4f4f4;
+  --color-9747ff: #9747ff;
+  --color-828282: #828282;
+
+  /* === BORDER RADIUS === */
+  --radius-xs: 3px;
+  --radius-s: 6px;
+  --radius-m: 8px;
+  --radius-l: 10px;
+  --radius-xl: 12px;
+  --radius-2xl: 20px;
+  --radius-3xl: 30px;
+  --radius-round: 50%;
+  --radius-pill: 100px;
+  --radius-big: 80px;
+
+  /* === SPACING === */
+  --space-xxs: 2px;
+  --space-xs: 4px;
+  --space-s: 8px;
+  --space-m: 16px;
+  --space-l: 24px;
+  --space-xl: 32px;
+  --space-2xl: 40px;
+  --space-3xl: 52px;
+  --space-4xl: 64px;
+  --space-card-gap: 20px;
+  --space-card-padding: 16px;
+  --space-btn-padding: 8px 16px;
+
+  /* === TYPOGRAPHY EXAMPLES === */
+  --f-poppins: 'Poppins', Arial, sans-serif;
+  --f-pangram: 'Pangram', Arial, sans-serif;
+  --f-opensans: 'Open Sans', Arial, sans-serif;
+  --f-sfpro: 'SF Pro Display', Arial, sans-serif;
+  --f-inter: 'Inter', Arial, sans-serif;
+}
+body {
+  font-family: var(--f-poppins);
+  background: var(--color-ffffff);
+  color: var(--color-000000);
+  margin: 0;
+  padding: 0;
+}
+
+/* UTILITY CLASSES (for layouts) */
+.flex { display: flex; }
+.flex-col { flex-direction: column; }
+.flex-row { flex-direction: row; }
+.space-between { justify-content: space-between; }
+.items-center { align-items: center; }
+.text-center { text-align: center; }
+.w-full { width: 100%; }
+.h-full { height: 100%; }
+.rounded { border-radius: var(--radius-l); }
+.shadow-card { box-shadow: 0 0 20px 0 rgba(0,0,0,0.07); }
+.p-s { padding: var(--space-s); }
+.p-m { padding: var(--space-m); }
+.m-s { margin: var(--space-s); }
+.m-m { margin: var(--space-m); }
+.mt-s { margin-top: var(--space-s); }
+.mb-s { margin-bottom: var(--space-s); }
+
+/* GENERIC BUTTON STYLES */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  border-radius: var(--radius-l);
+  background: var(--color-129575);
+  color: var(--color-ffffff);
+  font-family: var(--f-poppins);
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  padding: var(--space-btn-padding);
+}
+
+.btn.btn-secondary {
+  background: var(--color-fff2af);
+  color: var(--color-484848);
+}
+
+.btn.btn-filter { background: var(--color-129575); color: var(--color-ffffff);}
+.btn.btn-category { background: var(--color-ffffff); color: var(--color-71b1a1); border: 1px solid var(--color-71b1a1); }
+
+/* CARD, AVATAR, ETC. */
+.card {
+  border-radius: var(--radius-l);
+  background: var(--color-ffffff);
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.07);
+  padding: var(--space-card-padding);
+  overflow: hidden;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-round);
+  background: var(--color-ffce80);
+  overflow: hidden;
+}
+.card-img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-xl);
+}
+.rating-badge {
+  background: var(--color-ffe1b3);
+  border-radius: var(--radius-l);
+  padding: 0 8px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+}
+</style>
